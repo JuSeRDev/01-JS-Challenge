@@ -109,13 +109,18 @@ body{
 .paragraph{
     font-size: 16px;
     color: var(--Grayish-purple);
-    margin-top: 30px;
-    margin-bottom: 20px;
     font-weight: 300;
-    display: none;
+   /*  margin-top: 30px;
+    margin-bottom: 20px;
+    display: none; */
+    max-height: 0;
+    overflow: hidden; /* Oculta lo que sale de los limites permitidos en el height */
+    transition: max-height 0.3s ease, padding 0.3s ease;
 }
 
-
+.paragraph.open{
+    max-height: auto;
+}
 
 
 footer{
