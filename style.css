@@ -125,8 +125,7 @@ body{
 
 
 footer{
-    position: fixed;
-    bottom: 20px;
+    margin-top: 20px;
 }
 
 .attribution { font-size: 11px; text-align: center; }
