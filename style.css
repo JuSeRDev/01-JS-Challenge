@@ -120,7 +120,7 @@ body{
 }
 
 .paragraph.open{
-    max-height: 120px;
+    max-height: 150px;
 }
 
 
@@ -131,3 +131,14 @@ footer{
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+@media (max-width: 600px){
+    body{
+        background-image: url(faq-accordion-main/assets/images/background-pattern-mobile.svg);
+        background-size: 600px;
+    }
+
+    .container{
+        width: 350px;
+    }
+}
