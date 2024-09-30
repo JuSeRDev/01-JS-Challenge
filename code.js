@@ -3,6 +3,8 @@ const paragraph = document.querySelectorAll(".paragraph")
 const plus = document.querySelectorAll(".plus")
 const minus = document.querySelectorAll(".minus")
 
+//* Esta opcion solamente oculta y muestra el parrafo modificando el display
+
 /* title.forEach((subtitle, i)=>{
     title[i].addEventListener("click", ()=>{
         if (paragraph[i].style.display === "none") {
@@ -18,9 +20,13 @@ const minus = document.querySelectorAll(".minus")
     })
 }) */
 
+
+//* Esta opcion es mas interesante, esta logra hacerlo dinamico
+
 title.forEach((subtitle, i)=>{
     subtitle.addEventListener("click", ()=>{
-        paragraph[i].classList.toggle("open")
+        // toggle hace que si la esta esta actica la descativa y si esta desactivada la activa
+        paragraph[i].classList.toggle("open") 
             if (paragraph[i].classList.contains("open")) {
                 plus[i].style.display = "none"
                 minus[i].style.display = "block"
